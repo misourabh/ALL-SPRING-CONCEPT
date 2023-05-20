@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+  http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+   <bean 
+   
+     class="com.jspiders.springcorexml.beans.CarBean" 
+    name="car1">
+    <property name="id" value="1"/>
+    <property name="brand" value="TATA"/>
+    <property name="model" value="SAFARI 700"/> 
+    <property name="regno" value="5"/>  
+    <property name="driver" ref="driver1"/>
+   
+   </bean>
+   
+   <bean class="com.jspiders.springcorexml.beans.DriverBean"
+      name="driver1">
+      <property name="id" value="1"/>
+      <property name="name" value="Sourabh"/>
+      <property name="email" value="sourabhdhotre1829@gmail.com"/>
+      <property name="contact" value="7058981413"/>
+   
+   
+   
+   
+   
+   </bean>
+   
+   
+   </beans>
+   

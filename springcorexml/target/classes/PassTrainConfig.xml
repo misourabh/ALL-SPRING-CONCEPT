@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+  http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+   <bean 
+   
+   class="com.jspiders.springcorexml.beans.PassengerBean"
+   name="passenger1">
+   <property name="id" value="1"/>
+   <property name="name" value="KEERTI"/>
+   <property name="age" value="25"/>
+   <property name="gender" value='f'/>
+   <property name="train" ref="train1" />
+   
+    </bean>
+    
+    <bean 
+    
+    class="com.jspiders.springcorexml.beans.PassengerBean"
+    name="passenger2">
+   <property name="id" value="2"/>
+   <property name="name" value="SOURABH"/>
+   <property name="age" value="25"/>
+   <property name="gender" value='m'/>
+   <property name="train" ref="train1" />
+   
+    
+    </bean>
+   
+   <bean class="com.jspiders.springcorexml.beans.TrainBean"
+         name="train1">
+         <property name="id" value="1"/>
+         <property name="train_name" value="HUTATMA EXPRRESS"/>
+         <property name="train_no" value="12157"/>
+         
+         
+   
+   
+   </bean>
+   
+   
+   
+   </beans>
+   
